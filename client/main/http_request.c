@@ -36,7 +36,7 @@ void http_request_post(camera_fb_t* image_data)
     char output_buffer[MAX_HTTP_OUTPUT_BUFFER] = {0};   // Buffer to store response of http request
     int content_length = 0;
     esp_http_client_config_t config = {
-        .url = "http://192.168.1.125:8889/predict",
+        .url = "http://xx.xx.xx.xx:8889/predict",
         .user_data = output_buffer,
     };
     esp_http_client_handle_t client = esp_http_client_init(&config);
